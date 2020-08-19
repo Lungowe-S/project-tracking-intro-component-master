@@ -2,7 +2,7 @@
   --red-001: hsl(0, 100%, 68%);
   --very-dark-blue-002: hsl(230, 29%, 20%);
   --dark-grayish-blue-003: hsl(230, 11%, 40%);
-  --grayish-blue-004: hsl(231, 79%, 65%);
+  --grayish-blue-004: hsl(231, 7%, 65%);
   --light-grayish-blue-005: hsl(207, 33%, 95%);
 }
 
@@ -55,10 +55,14 @@ ul li a {
   color: var(--very-dark-blue-002);
 }
 
+li:last-child a {
+  color: var(--grayish-blue-004);
+}
+
 .dot {
   border-radius: 50%;
   height: 0.5em;
   width: 0.5em;
-  background-color: var(--dark-grayish-blue-003);
+  background-color: var(--grayish-blue-004);
   align-self: center;
 }
