@@ -1,0 +1,64 @@
+:root {
+  --red-001: hsl(0, 100%, 68%);
+  --very-dark-blue-002: hsl(230, 29%, 20%);
+  --dark-grayish-blue-003: hsl(230, 11%, 40%);
+  --grayish-blue-004: hsl(231, 79%, 65%);
+  --light-grayish-blue-005: hsl(207, 33%, 95%);
+}
+
+html {
+  font-size: 125%;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.nav_menu,
+h2 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/** Navigation styles **/
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8em;
+  padding-right: 5em;
+}
+
+.logo {
+  width: 20%;
+}
+
+.nav_menu {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  font-size: 0.7em;
+}
+
+ul li {
+  margin: 0 3.5em 0 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--very-dark-blue-002);
+}
+
+.dot {
+  border-radius: 50%;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: var(--dark-grayish-blue-003);
+  align-self: center;
+}
