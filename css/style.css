@@ -93,7 +93,7 @@ p:nth-child(1) span {
   letter-spacing: 0.6px;
 }
 
-p:nth-child(1) {
+.content_area p:nth-child(1) {
   padding-left: 0.35em;
   letter-spacing: 3px;
   color: var(--grayish-blue-004);
@@ -147,4 +147,19 @@ p:nth-of-type(2) {
   color: var(--grayish-blue-004);
   letter-spacing: 3.9px;
   font-weight: 300;
+}
+
+/** Footer Styles **/
+
+.attribution {
+  font-size: 0.75em;
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  color: var(--very-dark-blue-002);
+  padding-top: 2em;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
