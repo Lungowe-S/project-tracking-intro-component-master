@@ -30,6 +30,8 @@ h2 {
   align-items: center;
   padding-left: 8em;
   padding-right: 5em;
+  position: relative;
+  z-index: 100;
 }
 
 .logo {
@@ -55,6 +57,12 @@ ul li a {
   color: var(--very-dark-blue-002);
 }
 
+ul li a:hover,
+ul li a:focus,
+ul li a:active {
+  text-decoration: underline;
+}
+
 li:last-child a {
   color: var(--grayish-blue-004);
 }
@@ -65,6 +73,18 @@ li:last-child a {
   width: 0.5em;
   background-color: var(--grayish-blue-004);
   align-self: center;
+}
+
+.nav_background {
+  background-color: var(--light-grayish-blue-005);
+  height: 19.5em;
+  width: 34em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom-left-radius: 3em;
 }
 
 /** Content Area Styles **/
@@ -81,6 +101,8 @@ li:last-child a {
 
 .illustration {
   padding-top: 5em;
+  position: relative;
+  z-index: 100;
 }
 
 p:nth-child(1) span {
@@ -139,6 +161,12 @@ p:nth-of-type(2) {
   padding: 12px 10px;
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: hsl(0, 100%, 73%);
+}
+
 .demo_button_area span {
   padding-left: 1.07em;
   font-family: "Barlow Condensed", sans-serif;
@@ -163,3 +191,5 @@ p:nth-of-type(2) {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/** Media Queries **/
