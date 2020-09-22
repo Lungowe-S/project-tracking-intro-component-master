@@ -235,10 +235,48 @@ p:nth-of-type(2) {
 
   .content_description {
     order: 1;
+    padding-left: 2em;
+    padding-top: 4em;
   }
 
   .nav_background {
-    width: 8.8em;
-    height: 23em;
+    width: 8.2em;
+    height: 20.3em;
+  }
+
+  .illustration {
+    padding-top: 3em;
+  }
+
+  .content_area p:nth-child(1) {
+    letter-spacing: 4.3px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    padding-top: 0.5em;
+  }
+
+  p:nth-of-type(2) {
+    padding-top: 0.9em;
+  }
+
+  .demo_button_area {
+    padding-top: 1.3em;
+  }
+
+  .button {
+    padding: 10px 6px;
+    width: 10.1em;
+    letter-spacing: 0.8px;
+  }
+
+  .demo_button_area span {
+    letter-spacing: 2px;
+  }
+
+  .attribution {
+    font-size: 0.6em;
+    padding-top: 4em;
   }
 }
