@@ -91,12 +91,11 @@ li:last-child a {
   border-bottom-left-radius: 3em;
 }
 
-/** Content Area Styles **/
+.nav_close_button {
+  display: none;
+}
 
-/* .content_area {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-} */
+/** Content Styles **/
 
 .content_area {
   display: flex;
@@ -211,7 +210,7 @@ p:nth-of-type(2) {
   }
 
   .nav_menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     width: 89%;
@@ -220,7 +219,12 @@ p:nth-of-type(2) {
     left: 40px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.8);
   }
+
+  /* .active {
+    display: flex;
+  } */
 
   span.nav_toggle {
     position: absolute;
@@ -265,6 +269,17 @@ p:nth-of-type(2) {
     padding-top: 20px;
   }
 
+  .nav_close_button {
+    position: absolute;
+    top: 0;
+    right: 66px;
+    display: none;
+  }
+
+  .active .illustration {
+    opacity: 0.8;
+  }
+
   /** Content Area **/
 
   .content_area {
@@ -286,16 +301,103 @@ p:nth-of-type(2) {
     padding-top: 2.9em;
     z-index: 1;
     padding-left: 0.9em;
-    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 913px) {
+  .nav_close_button {
+    right: 52px;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .nav_close_button {
+    right: 42px;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  .nav_close_button {
+    right: 32px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav_menu {
+    width: 87%;
   }
 
-  /* .content_area p:nth-child(1) {
-    letter-spacing: 4.3px;
+  .nav_close_button {
+    right: 26px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav_menu {
+    width: 86%;
+  }
+
+  .nav_close_button {
+    right: 29px;
+  }
+}
+
+@media only screen and (max-width: 451px) {
+  .nav_menu {
+    width: 85%;
+  }
+
+  .nav_close_button {
+    right: 28px;
   }
 
   h2 {
-    font-size: 1.8em;
-    padding-top: 0.5em;
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .nav_menu {
+    width: 84%;
+  }
+
+  .nav_close_button {
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .nav_close_button {
+    right: 32px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .nav_menu {
+    width: 82%;
+    box-shadow: none;
+  }
+
+  .nav_close_button {
+    right: 32px;
+  }
+
+  .illustration {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .nav_close_button {
+    right: 36px;
+  }
+
+  .demo_button_area span {
+    letter-spacing: 2.9px;
   }
 
   p:nth-of-type(2) {
@@ -306,52 +408,13 @@ p:nth-of-type(2) {
     padding-top: 1.3em;
   }
 
-  .button {
-    padding: 10px 6px;
-    width: 10.1em;
-    letter-spacing: 0.8px;
-  }
-
-  .demo_button_area span {
-    letter-spacing: 2px;
-  }
-
   .attribution {
     font-size: 0.6em;
     padding-top: 4em;
-  } */
-}
-
-@media only screen and (max-width: 600px) {
-  .nav_menu {
-    width: 87%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .nav_menu {
-    width: 86%;
-  }
-}
-
-@media only screen and (max-width: 451px) {
-  .nav_menu {
-    width: 85%;
   }
 
-  h2 {
-  }
-}
-
-@media only screen and (max-width: 430px) {
-  .nav_menu {
-    width: 84%;
-  }
-}
-
-@media only screen and (max-width: 405px) {
-  .nav_menu {
-    width: 82%;
+  .active .illustration {
+    opacity: 1;
   }
 }
 
@@ -360,15 +423,16 @@ p:nth-of-type(2) {
     width: 80%;
     top: 75px;
     left: 39px;
+    box-shadow: none;
+  }
+
+  .nav_close_button {
+    right: 36px;
   }
 
   .nav_background {
     width: 8.2em;
     height: 20.3em;
-  }
-
-  .illustration {
-    opacity: 1;
   }
 
   .content_area p:nth-child(1) {
@@ -380,14 +444,6 @@ p:nth-of-type(2) {
     padding-top: 0.5em;
   }
 
-  p:nth-of-type(2) {
-    padding-top: 0.9em;
-  }
-
-  .demo_button_area {
-    padding-top: 1.3em;
-  }
-
   .button {
     padding: 10px 6px;
     width: 10.1em;
@@ -398,8 +454,19 @@ p:nth-of-type(2) {
     letter-spacing: 2px;
   }
 
-  .attribution {
-    font-size: 0.6em;
-    padding-top: 4em;
+  .active .illustration {
+    opacity: 1;
   }
+}
+
+.active .nav_menu {
+  display: flex;
+}
+
+.active .nav_toggle {
+  display: none;
+}
+
+.active .nav_close_button {
+  display: inline-block;
 }
